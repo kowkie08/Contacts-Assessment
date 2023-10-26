@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
-##Update Modules before Building
+## Update Modules before Building
 Run 'npm install' after pulling to update all the resources needed.
 
 ## Development server
