@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-4">
+      <div *ngIf="contacts" class="">
+        <p class="h1">Contact List</p>
+        <div id="group">
+          <div class="list-group "  *ngFor="let contact of contacts">
+            <a class="btn btn-primary  text-bg-success list-group-item list-group-item-action" data-bs-toggle="collapse"
+              href="#collapse{{contact.id}}" role="button" aria-expanded="false" aria-controls="collapse">
+              {{ contact.name }}
+            </a>
+            <div class="accordion-group">
+              <div class="collapse" id="collapse{{contact.id}}" data-bs-parent="#group">
+                <div class=" text-bg-secondary card card-body">
+                  <p>Email: {{contact.email}}</p>
+                  <p>Phone: {{contact.phone}}</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <a [routerLink]="['/contacts', contact.id]" class="list-group-item list-group-item-action"
+            aria-current="true">
+           
+          </a> -->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
